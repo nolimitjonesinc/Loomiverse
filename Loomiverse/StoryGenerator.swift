@@ -54,7 +54,7 @@ struct OpenAIResult: Codable {
 
 class StoryGenerator: ObservableObject {
     var context: NSManagedObjectContext
-    private let apiKey = "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"
+    private let apiKey = API_UNAVAILABLE
     private let apiUrl = "https://api.openai.com/v1/chat/completions"
     var protagonistName: String = ""
     var currentAllies: [String] = []

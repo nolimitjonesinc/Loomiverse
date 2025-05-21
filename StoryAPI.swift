@@ -1,7 +1,7 @@
 import Foundation
 
 class StoryAPI {
-    private let apiKey = "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"
+    private let apiKey =  apiKey goes here
     private let apiUrl = "https://api.openai.com/v1/chat/completions"
     
     func generateContinuations(for previousStorySegment: String, completion: @escaping ([String]) -> Void) {
