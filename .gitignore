@@ -1,0 +1,16 @@
+# Xcode
+## User Interaction Data
+xcuserdata/
+
+## Build Folders (DerivedData, etc.)
+build/
+DerivedData/
+
+## Other User-Specific Files
+*.xcuserdatad
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+*.xcodeproj
+*.xcworkspace

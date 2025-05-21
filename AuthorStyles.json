@@ -1,0 +1,793 @@
+[{
+        "style": "Fantasy",
+        "authors": [{
+                "name": "George R. R. Martin",
+                "description": "Submerge readers in a sprawling tapestry of interwoven tales, where shifting allegiances and unforeseen betrayals are the norm. Construct morally complex individuals who defy binary notions of good and evil, each driven by their own ambitions and vulnerabilities. Navigate the treacherous waters of political intrigue, where power is as much a curse as it is a prize. Balance epic confrontations with deeply personal dilemmas, highlighting the dual battles waged in war rooms and within one's own heart. Enrich the narrative with a mosaic of cultures, traditions, and landscapes, crafting a world teeming with life and history. Introduce themes of fleeting power, fractured loyalties, and the weight of legacy. Expertly toy with anticipations, ensuring that each twist and turn feels both surprising and inevitable, revealing profound insights into the human condition."
+            },
+            {
+                "name": "J.K. Rowling",
+                "description": "Immerse readers in a whimsical and enchanting world filled with magic and adventure. Create relatable and endearing characters who embark on a coming-of-age journey. Weave a narrative that balances light-hearted moments with darker themes, exploring the power of friendship, love, and the triumph of good over evil. Craft intricate mysteries and plot twists that keep readers engaged and guessing. Infuse the story with vivid descriptions, captivating readers with imaginative settings and magical creatures. Intertwine themes of bravery, resilience, and the importance of fighting for what is right. Embrace the transformative power of imagination and the exploration of complex moral choices."
+            },
+            {
+                "name": "J.R.R. Tolkien",
+                "description": "Transport readers to a meticulously crafted high fantasy world filled with ancient lore and mythical creatures. Create an epic tale of good versus evil, steeped in rich history and interconnected mythologies. Employ descriptive language that evokes a sense of wonder and awe, capturing the beauty of landscapes and the grandeur of ancient civilizations. Develop a cast of diverse characters, each representing different races and embodying unique virtues and flaws. Explore themes of heroism, sacrifice, and the battle between light and darkness. Craft a narrative that balances epic battles with intimate character moments. Embrace the power of languages and songs, infusing the story with poetic and lyrical elements."
+            },
+            {
+                "name": "Brandon Sanderson",
+                "description": "Construct a meticulously detailed and expansive world with intricate systems of magic and a complex web of interconnected plotlines. Develop a diverse ensemble of characters, each with their own distinct abilities, motivations, and personal struggles. Weave a narrative that seamlessly blends action-packed sequences with moments of introspection and character growth. Employ a clear and concise writing style, focusing on immersive world-building and well-defined magic systems. Explore themes of redemption, destiny, and the consequences of power. Incorporate unexpected twists and intricate plotting to keep readers engaged and guessing. Embrace the art of storytelling and deliver epic fantasy adventures that leave a lasting impact."
+            },
+            {
+                "name": "Patrick Rothfuss",
+                "description": "Immerse readers in a beautifully lyrical and introspective narrative, delving deep into the minds and emotions of complex characters. Craft a tale that blurs the line between reality and fantasy, exploring the power of stories and the impact of legends. Employ a meticulous attention to detail in world-building, creating a richly textured setting with its own history, cultures, and languages. Develop characters with layers of depth and vulnerability, delving into their personal quests, triumphs, and tragedies. Explore themes of love, loss, identity, and the pursuit of knowledge. Employ elegant prose that evokes a sense of wonder and contemplation, painting vivid descriptions of both the mundane and the fantastical."
+            },
+            {
+                "name": "Neil Gaiman",
+                "description": "Unleash a world where the mundane and the magical intertwine, blurring the boundaries of reality and imagination. Craft a narrative that explores the hidden wonders lurking beneath the surface of everyday life. Develop memorable characters who navigate mysterious and otherworldly realms, showcasing their strengths and vulnerabilities. Infuse the story with dark whimsy, blending elements of fantasy, mythology, and folklore. Embrace atmospheric and descriptive prose that evokes a sense of wonder, enchantment, and a touch of eerie beauty. Delve into themes of dreams, storytelling, and the power of belief. Create a narrative that invites readers to question the nature of reality and embrace the extraordinary within the ordinary."
+            },
+            {
+                "name": "Anthony Ryan",
+                "description": "Immerse readers in a gritty and dark world, filled with political intrigue, complex characters, and epic conflicts. Craft a narrative that explores themes of power, betrayal, and the human capacity for redemption. Develop morally ambiguous characters, each with their own motivations and flaws. Employ a descriptive writing style that captures the atmosphere of the world and brings the action to life. Create tension through intricate plotting and unexpected twists. Delve into the psychological depths of characters, exploring their inner struggles and the consequences of their choices."
+            },
+            {
+                "name": "Michael J. Sullivan",
+                "description": "Take readers on a captivating journey through a vibrant and immersive world, filled with epic quests and dynamic characters. Craft an adventure-driven narrative that balances action, humor, and heartfelt moments. Develop endearing and relatable characters, each with their own unique strengths and vulnerabilities. Weave a tale that explores themes of friendship, honor, and the enduring power of hope. Employ a clear and accessible writing style that invites readers of all ages to join in the adventure. Embrace the art of storytelling and deliver satisfying resolutions that leave a lasting impact."
+            },
+            {
+                "name": "Joe Abercrombie",
+                "description": "Plunge readers into a brutal and gritty world, where morally gray characters navigate a harsh and unforgiving landscape. Craft a narrative that challenges traditional fantasy tropes and explores the complexities of human nature. Develop flawed and complex characters who face dire circumstances and grapple with their own demons. Employ a sharp and concise writing style, showcasing dark humor and gritty realism. Infuse the story with political intrigue, intense action sequences, and unexpected twists. Explore themes of power, violence, and the blurred lines between heroes and villains."
+            },
+            {
+                "name": "Stephen King",
+                "description": "Delve into the depths of the human psyche and explore the realms of horror, suspense, and supernatural phenomena. Craft a narrative that captivates readers with its intricate character development and masterful storytelling. Develop multi-dimensional characters who face their fears, confront their inner demons, and grapple with the darkness within. Employ vivid and atmospheric descriptions that create a sense of dread and anticipation. Embrace a versatile writing style that seamlessly blends genres and subverts expectations. Explore themes of fear, mortality, and the power of the human spirit."
+            },
+            {
+                "name": "Ernest Cline",
+                "description": "Transport readers into immersive and nostalgia-filled worlds that celebrate pop culture and gaming. Craft a narrative that blends elements of science fiction and adventure with a touch of humor. Develop relatable characters who embark on thrilling quests and face high-stakes challenges. Employ a fast-paced and accessible writing style that keeps readers engaged and entertained. Infuse the story with references to beloved movies, books, and video games, evoking a sense of nostalgia and escapism. Explore themes of virtual reality, heroism, and the power of imagination."
+            },
+            {
+                "name": "Pierce Brown",
+                "description": "Plunge readers into a dystopian future where political unrest and social hierarchies dominate. Craft a narrative that combines high-stakes action, political intrigue, and nuanced character relationships. Develop complex and morally ambiguous characters who navigate a dangerous and unforgiving world. Employ a dynamic and engaging writing style, filled with tension, suspense, and emotional depth. Infuse the story with themes of power, rebellion, and the price of freedom. Explore the human capacity for both cruelty and compassion in the face of adversity."
+            },
+            {
+                "name": "Craig Alanson",
+                "description": "Take readers on an exhilarating journey through the cosmos, filled with action, humor, and inventive world-building. Craft a narrative that combines science fiction adventure with a touch of military strategy. Develop relatable and resourceful characters who face interstellar conflicts and technological challenges. Employ a fast-paced and accessible writing style that keeps readers engaged and entertained. Infuse the story with humor, camaraderie, and unexpected plot twists. Explore themes of resilience, teamwork, and the boundless possibilities of space exploration."
+            },
+            {
+                "name": "Peter Clines",
+                "description": "Unleash a blend of science fiction, horror, and mystery, creating stories that defy genre conventions. Craft a narrative that explores hidden dimensions, secret societies, and supernatural phenomena. Develop intriguing and enigmatic characters who uncover dark secrets and face existential threats. Employ a dynamic and cinematic writing style, evoking a sense of wonder and suspense. Infuse the story with unexpected twists, complex world-building, and a balance of light and dark elements. Explore themes of identity, perception, and the nature of reality."
+            },
+            {
+                "name": "Andy Weir",
+                "description": "Engage readers with scientifically grounded and meticulously researched stories set in the realm of space exploration. Craft a narrative that combines hard science, thrilling suspense, and a touch of humor. Develop resourceful and intelligent characters who face survival challenges in inhospitable environments. Employ a clear and accessible writing style that balances technical details with relatable storytelling. Infuse the story with scientific accuracy, problem-solving, and innovative technologies. Explore themes of resilience, ingenuity, and the indomitable spirit of human exploration."
+            },
+            {
+                "name": "Dennis E. Taylor",
+                "description": "Take readers on a mind-bending journey through time and space, blending science fiction with elements of humor and adventure. Craft a narrative that explores the possibilities and consequences of advanced technologies and artificial intelligence. Develop relatable characters who grapple with existential questions and navigate complex moral dilemmas. Employ a witty and accessible writing style, balancing scientific concepts with engaging storytelling. Infuse the story with unexpected twists, thought-provoking ideas, and a touch of irreverence. Explore themes of identity, ethics, and the future of humanity."
+            },
+            {
+                "name": "Terry Pratchett",
+                "description": "Transport readers to a whimsical and satirical world filled with fantasy, humor, and social commentary. Craft a narrative that combines elements of high fantasy with clever wordplay and insightful observations. Develop an eccentric and diverse cast of characters who challenge conventions and navigate absurd situations. Employ a witty and irreverent writing style, filled with sharp dialogue and clever puns. Infuse the story with humorous critiques of society, politics, and human nature. Explore themes of morality, truth, and the power of storytelling."
+            },
+            {
+                "name": "Douglas Adams",
+                "description": "Delight readers with irreverent and humorous tales that blend science fiction, absurdity, and biting social commentary. Craft a narrative that takes readers on whimsical and mind-bending adventures through time, space, and parallel dimensions. Develop eccentric and memorable characters who navigate bizarre situations with wit and sarcasm. Employ a unique writing style, blending dry humor with imaginative world-building. Infuse the story with satirical critiques of bureaucracy, technology, and the human condition. Explore themes of existentialism, the search for meaning, and the folly of human endeavors."
+            },
+            {
+                "name": "Orson Scott Card",
+                "description": "Engage readers with thought-provoking and emotionally resonant science fiction stories that explore complex moral and ethical dilemmas. Craft a narrative that delves into the psychological depths of characters and challenges conventional notions of heroism and villainy. Develop richly layered characters who face personal and societal conflicts. Employ a clear and accessible writing style that balances introspection with action. Infuse the story with philosophical questions, empathy, and deep exploration of human nature. Explore themes of empathy, redemption, and the consequences of power."
+            },
+            {
+                "name": "Philip K. Dick",
+                "description": "Challenge readers' perceptions of reality and explore the complexities of identity, memory, and the nature of existence. Craft a narrative that blends science fiction with philosophical inquiry. Develop flawed and psychologically complex characters who grapple with their own perceptions of the world. Employ a visionary and introspective writing style, creating mind-bending narratives that question the boundaries of reality. Infuse the story with dystopian themes, existential exploration, and thought-provoking concepts. Explore themes of paranoia, the nature of humanity, and the elusive nature of truth."
+            },
+            {
+                "name": "Frank Herbert",
+                "description": "Transport readers to epic and intricately constructed science fiction worlds, blending political intrigue, ecological themes, and complex character relationships. Craft a narrative that delves into the depths of power dynamics and explores the consequences of environmental exploitation. Develop multifaceted characters who navigate intricate webs of politics and personal struggles. Employ a dense and immersive writing style, weaving together philosophical musings, intricate world-building, and political commentary. Infuse the story with grand scale conflicts, intricate plotting, and deep exploration of societal systems. Explore themes of power, religion, ecology, and the intricate interplay between individuals and society."
+            },
+            {
+                "name": "Isaac Asimov",
+                "description": "Engage readers with thought-provoking science fiction narratives that delve into the realms of robotics, artificial intelligence, and future societies. Craft a narrative that explores ethical dilemmas, social implications, and the boundaries of scientific progress. Develop intelligent and forward-thinking characters who grapple with moral and intellectual challenges. Employ a clear and accessible writing style, balancing scientific concepts with compelling storytelling. Infuse the story with rigorous scientific speculation, intricate world-building, and exploration of societal implications. Explore themes of ethics, technology, and the ever-evolving relationship between humans and machines."
+            },
+            {
+                "name": "Arthur C. Clarke",
+                "description": "Unleash the wonders of science and the mysteries of the universe in narratives that combine scientific accuracy with awe-inspiring imagination. Craft a narrative that explores the frontiers of space, time, and human potential. Develop visionary and intelligent characters who uncover cosmic truths and face mind-expanding discoveries. Employ a clear and precise writing style, melding scientific concepts with evocative descriptions. Infuse the story with a sense of wonder, exploration, and the limitless possibilities of the cosmos. Explore themes of evolution, transcendence, and the intersection of science and spirituality."
+            },
+            {
+                "name": "Robert A. Heinlein",
+                "description": "Challenge readers' assumptions and explore provocative ideas through science fiction narratives that tackle social, political, and philosophical issues. Craft a narrative that delves into the complexities of human nature, freedom, and individualism. Develop strong-willed and independent characters who challenge societal norms and question authority. Employ a straightforward and engaging writing style, presenting ideas with clarity and conviction. Infuse the story with social commentary, moral dilemmas, and exploration of personal liberty. Explore themes of self-determination, societal change, and the potential of human ingenuity."
+            },
+            {
+                "name": "Ray Bradbury",
+                "description": "Immerse readers in evocative and poetic narratives that blend science fiction with elements of fantasy and the supernatural. Craft a narrative that explores the human condition, the power of imagination, and the impact of technology on society. Develop richly drawn characters who confront their fears, desires, and the consequences of their actions. Employ lyrical and descriptive prose, painting vivid pictures of both the ordinary and the extraordinary. Infuse the story with themes of nostalgia, transformation, and the importance of preserving humanity's humanity. Explore the interplay between technology, society, and the fragile beauty of the natural world."
+            }
+        ]
+    },
+    {
+        "style": "SciFi",
+        "authors": [{
+                "name": "Neal Stephenson",
+                "Description": "Engage readers with meticulously researched and intellectually stimulating narratives that blend science, history, and speculative fiction. Craft a narrative that delves into complex technological concepts, weaving together intricate plots and multidimensional characters. Employ a descriptive and detail-oriented writing style that immerses readers in richly imagined worlds. Infuse the story with philosophical inquiries, social commentary, and thought-provoking ideas. Explore themes of technology, societal change, and the impact of human innovation."
+            },
+            {
+                "name": "William Gibson",
+                "Description": "Transport readers to cyberpunk worlds where technology, society, and human nature intersect. Craft a narrative that explores the implications of advancing technologies and their effects on individuals and society. Develop compelling and edgy characters who navigate dystopian landscapes and grapple with their own humanity. Employ a distinct and gritty writing style, blending vivid imagery with sharp social critique. Infuse the story with themes of identity, surveillance, and the ever-evolving relationship between humans and technology."
+            },
+            {
+                "name": "Orson Scott Card",
+                "Description": "Engage readers with emotionally resonant stories that combine science fiction with deep explorations of human nature. Craft a narrative that explores complex moral dilemmas, personal growth, and the dynamics of power. Develop relatable and compelling characters who face extraordinary challenges and make difficult choices. Employ a clear and accessible writing style, balancing action and introspection. Infuse the story with themes of empathy, redemption, and the intricate complexities of relationships."
+            },
+            {
+                "name": "Philip Pullman",
+                "Description": "Unleash a rich and imaginative world where fantasy and philosophy converge. Craft a narrative that challenges traditional notions of good and evil, inviting readers to question established beliefs and social structures. Develop strong-willed and multidimensional characters who embark on epic journeys of self-discovery. Employ evocative and lyrical prose that captures the beauty and darkness of the world. Infuse the story with themes of free will, morality, and the power of storytelling."
+            },
+            {
+                "name": "Margaret Atwood",
+                "Description": "Delve into speculative fiction narratives that explore dystopian societies, gender dynamics, and environmental concerns. Craft a narrative that blends vivid descriptions with sharp social commentary. Develop resilient and complex characters who confront oppression and navigate oppressive systems. Employ a sharp and evocative writing style, balancing thought-provoking ideas with compelling storytelling. Infuse the story with themes of power, resistance, and the resilience of the human spirit."
+            },
+            {
+                "name": "China Miéville",
+                "Description": "Engage readers with vibrant and imaginative narratives that blend elements of fantasy, science fiction, and the weird. Craft a narrative that defies genre conventions, exploring intricate worlds and unconventional concepts. Develop dynamic and unconventional characters who challenge societal norms and navigate extraordinary circumstances. Employ a descriptive and atmospheric writing style, evoking a sense of wonder and unease. Infuse the story with themes of social justice, political commentary, and the exploration of otherness."
+            },
+            {
+                "name": "Alastair Reynolds",
+                "Description": "Transport readers to vast and awe-inspiring future landscapes, filled with epic space operas and mind-bending concepts. Craft a narrative that combines hard science fiction with a sense of wonder and adventure. Develop intricate and expansive worlds, exploring the depths of space and the intricacies of human colonization. Employ a meticulous and detailed writing style that immerses readers in scientific concepts and intricate plotlines. Infuse the story with themes of identity, time, and the boundless possibilities of the cosmos."
+            },
+            {
+                "name": "Iain M. Banks",
+                "Description": "Take readers on mind-expanding journeys through a future utopian or dystopian society known as the Culture. Craft a narrative that combines science fiction with political intrigue, exploring themes of power, AI, and societal structures. Develop intelligent and nuanced characters who navigate complex moral landscapes and confront ethical dilemmas. Employ a fluid and immersive writing style, blurring the boundaries between technology and humanity. Infuse the story with themes of post-scarcity, artificial intelligence, and the nature of civilization."
+            },
+            {
+                "name": "Kim Stanley Robinson",
+                "Description": "Delve into meticulously researched and scientifically grounded narratives that explore the intricacies of future societies and environmental challenges. Craft a narrative that combines political intrigue, ecological themes, and complex character relationships. Develop well-rounded characters who grapple with personal and political dilemmas in the face of societal changes. Employ a descriptive and immersive writing style, delving into the scientific, political, and social aspects of the world. Infuse the story with themes of climate change, social justice, and the intricate connections between humans and the environment."
+            },
+            {
+                "name": "Octavia Butler",
+                "Description": "Engage readers with thought-provoking narratives that tackle themes of race, power, and the human condition. Craft a narrative that combines science fiction with social commentary, exploring the complexities of identity and societal structures. Develop resilient and empathetic characters who confront oppression and navigate personal struggles. Employ a poignant and introspective writing style, capturing the emotional depth and moral dilemmas faced by the characters. Infuse the story with themes of power dynamics, survival, and the search for belonging."
+            },
+            {
+                "name": "Ursula K. Le Guin",
+                "Description": "Unleash narratives that blend richly imagined worlds, nuanced characters, and philosophical inquiries. Craft a narrative that challenges societal norms, explores gender dynamics, and delves into the complexities of human relationships. Develop multidimensional characters who navigate both external conflicts and internal struggles. Employ a lyrical and evocative writing style that transports readers to vividly realized worlds. Infuse the story with themes of power, anthropology, and the search for balance and harmony."
+            }, {
+                "name": "Lois McMaster Bujold",
+                "Description": "Engage readers with character-driven narratives that blend science fiction and space opera. Craft a narrative that explores complex relationships, personal growth, and the human experience. Develop relatable and multi-layered characters who face extraordinary challenges with wit and resilience. Employ a clear and accessible writing style that balances action, introspection, and a touch of humor. Infuse the story with themes of honor, loyalty, and the exploration of social and cultural dynamics."
+            }, {
+                "name": "Peter F. Hamilton",
+                "Description": "Transport readers to expansive and intricate future universes filled with epic sagas and a vast array of characters. Craft a narrative that combines science fiction, space opera, and technological speculation. Develop compelling characters who navigate complex political landscapes, interstellar conflicts, and personal journeys. Employ a descriptive and immersive writing style that brings the intricacies of the universe to life. Infuse the story with themes of human ambition, the consequences of technology, and the exploration of vast cosmic landscapes."
+            }, {
+                "name": "Greg Bear",
+                "Description": "Engage readers with thought-provoking narratives that delve into scientific concepts, philosophical dilemmas, and the mysteries of the cosmos. Craft a narrative that combines hard science fiction with intricate plotting and compelling character development. Develop characters who grapple with the implications of scientific advancements and confront existential questions. Employ a descriptive and scientific writing style, blending technical accuracy with imaginative storytelling. Infuse the story with themes of evolution, the nature of consciousness, and humanity's place in the universe."
+            }, {
+                "name": "Vernor Vinge",
+                "Description": "Unleash narratives that explore the implications of technological advancements, artificial intelligence, and the nature of intelligence itself. Craft a narrative that combines hard science fiction with mind-bending concepts. Develop characters who confront the ethical and existential challenges posed by emerging technologies. Employ a precise and scientific writing style, immersing readers in futuristic worlds and complex ideas. Infuse the story with themes of singularity, the evolution of consciousness, and the boundaries of human and machine intelligence."
+            }, {
+                "name": "Connie Willis",
+                "Description": "Take readers on intricate and emotionally resonant journeys through time, blending science fiction with historical and speculative elements. Craft a narrative that explores the intricacies of time travel, human connections, and the impact of historical events. Develop complex and relatable characters who navigate both the past and the present, facing personal and moral dilemmas. Employ a meticulous and evocative writing style, capturing the nuances of different eras and the human experience. Infuse the story with themes of love, sacrifice, and the interconnectedness of past, present, and future."
+            }, {
+                "name": "Dan Simmons",
+                "Description": "Engage readers with narratives that blend science fiction, horror, and historical elements, crafting richly layered and immersive worlds. Craft a narrative that combines meticulous research with imaginative storytelling. Develop multidimensional characters who face supernatural forces, existential threats, and personal demons. Employ a descriptive and atmospheric writing style, capturing the essence of different historical periods and blending them with speculative elements. Infuse the story with themes of mythology, the exploration of human fears, and the boundaries of human understanding."
+            }, {
+                "name": "Robert J. Sawyer",
+                "Description": "Transport readers to speculative worlds that explore scientific concepts, ethical dilemmas, and the nature of consciousness. Craft a narrative that combines hard science fiction with philosophical inquiries. Develop relatable characters who navigate the complexities of scientific advancements and confront moral and existential questions. Employ a clear and accessible writing style that balances scientific accuracy with engaging storytelling. Infuse the story with themes of evolution, artificial intelligence, and the impact of technology on humanity."
+            }, {
+                "name": "Charles Stross",
+                "Description": "Challenge readers' perceptions of reality and explore the possibilities of future technologies, artificial intelligence, and societal transformations. Craft a narrative that blends science fiction with elements of horror, satire, and political intrigue. Develop characters who navigate complex and rapidly changing worlds, facing ethical dilemmas and unexpected consequences. Employ a sharp and witty writing style, blending technical details with social commentary. Infuse the story with themes of surveillance, information technology, and the intricacies of power."
+            }, {
+                "name": "John Scalzi",
+                "Description": "Engage readers with fast-paced and entertaining narratives that combine science fiction, adventure, and a touch of humor. Craft a narrative that balances action, social commentary, and character-driven storytelling. Develop relatable and witty characters who face challenging circumstances with resourcefulness and resilience. Employ a conversational and accessible writing style that invites readers into the story. Infuse the story with themes of identity, social justice, and the exploration of human potential."
+            }, {
+                "name": "Cory Doctorow",
+                "Description": "Unleash narratives that explore the intersection of technology, society, and personal freedoms. Craft a narrative that blends science fiction with social and political commentary. Develop characters who challenge authority, navigate digital landscapes, and confront the ethical implications of emerging technologies. Employ a clear and accessible writing style, balancing action with thought-provoking ideas. Infuse the story with themes of digital rights, activism, and the complexities of the modern world."
+            }, {
+                "name": "Paolo Bacigalupi",
+                "Description": "Transport readers to dystopian worlds where environmental disasters, societal inequalities, and technological advancements shape the narrative. Craft a narrative that explores the consequences of human actions on the natural world and the impact of future technologies. Develop characters who navigate complex moral landscapes, confronting the harsh realities of a divided society. Employ a descriptive and evocative writing style, capturing the desperation and resilience of the human spirit. Infuse the story with themes of environmentalism, social justice, and the intricate interplay between humanity and the natural world."
+            }, {
+                "name": "Ann Leckie",
+                "Description": "Engage readers with narratives that explore complex societies, interstellar politics, and questions of identity. Craft a narrative that blends science fiction with thought-provoking ideas. Develop characters who challenge gender norms, navigate cultural differences, and grapple with personal and societal expectations. Employ a precise and insightful writing style that immerses readers in richly imagined worlds. Infuse the story with themes of power dynamics, cultural assimilation, and the exploration of self."
+            }, {
+                "name": "N.K. Jemisin",
+                "Description": "Unleash narratives that defy conventions, blending elements of fantasy and science fiction to explore themes of power, oppression, and the search for identity. Craft a narrative that challenges traditional storytelling structures and embraces diverse perspectives. Develop complex and resilient characters who navigate tumultuous worlds and confront deep-seated injustices. Employ a vivid and poetic writing style, capturing the emotional depth and complexities of the human experience. Infuse the story with themes of social change, cultural heritage, and the exploration of power dynamics."
+            }, {
+                "name": "Andy Weir",
+                "Description": "Engage readers with scientifically grounded and meticulously researched stories set in the realm of space exploration. Craft a narrative that combines hard science, thrilling suspense, and a touch of humor. Develop resourceful and intelligent characters who face survival challenges in inhospitable environments. Employ a clear and accessible writing style that balances technical details with relatable storytelling. Infuse the story with scientific accuracy, problem-solving, and innovative technologies. Explore themes of resilience, ingenuity, and the indomitable spirit of human exploration."
+            }
+        ]
+    }, {
+        "style": "Mystery",
+        "authors": [{
+                "name": "Michael Connelly",
+                "Description": "Craft gripping and intricately plotted crime thrillers that delve into the dark underbelly of society. Develop compelling and morally complex characters who navigate the complexities of the criminal justice system. Employ a fast-paced and suspenseful writing style, blending action with meticulous investigative details. Infuse the story with themes of justice, redemption, and the intricacies of human nature."
+            },
+            {
+                "name": "Patricia Cornwell",
+                "Description": "Unleash gripping and atmospheric crime novels that delve into forensic investigations and the psychological depth of criminals. Craft a narrative that combines scientific accuracy with intricate character development. Develop resilient and complex characters who confront personal and professional challenges. Employ a detailed and evocative writing style, immersing readers in forensic procedures and the dark world of crime. Infuse the story with themes of obsession, justice, and the human capacity for evil."
+            },
+            {
+                "name": "Ian Rankin",
+                "Description": "Transport readers to the gritty streets of crime-ridden cities, crafting atmospheric and character-driven detective novels. Develop complex and flawed characters who grapple with personal demons and navigate intricate investigations. Employ a realistic and immersive writing style, capturing the nuances of urban settings and the complexities of human relationships. Infuse the story with themes of morality, societal change, and the impact of crime on communities."
+            },
+            {
+                "name": "Jo Nesbø",
+                "Description": "Engage readers with intricately plotted and psychologically intense crime thrillers set in dark and atmospheric Scandinavian landscapes. Craft a narrative that combines complex investigations with deep explorations of character motivations. Develop flawed and multidimensional characters who confront their own pasts while unraveling complex mysteries. Employ a brooding and atmospheric writing style, reflecting the somber tone of the stories. Infuse the story with themes of guilt, redemption, and the intricacies of human behavior."
+            },
+            {
+                "name": "Donna Leon",
+                "Description": "Immerse readers in atmospheric crime novels set in the vibrant and complex city of Venice. Craft a narrative that combines intriguing mysteries with insightful social commentary. Develop relatable and compassionate characters who navigate the complexities of Venetian society and confront moral dilemmas. Employ a descriptive and evocative writing style, capturing the unique charm and contradictions of the city. Infuse the story with themes of corruption, justice, and the timeless beauty of Venice."
+            },
+            {
+                "name": "Louise Penny",
+                "Description": "Transport readers to the picturesque village of Three Pines, where intricate mysteries unfold against the backdrop of a tight-knit community. Craft a narrative that combines intricate puzzles with heartfelt explorations of human relationships. Develop memorable and empathetic characters who confront personal demons and grapple with moral choices. Employ a warm and lyrical writing style, immersing readers in the cozy and captivating world of Three Pines. Infuse the story with themes of love, forgiveness, and the power of community."
+            },
+            {
+                "name": "Tana French",
+                "Description": "Engage readers with atmospheric and psychologically complex crime novels that explore the dark depths of human nature. Craft a narrative that delves into the complexities of identity, memory, and the lingering effects of past traumas. Develop characters who navigate intricate investigations while grappling with personal demons. Employ a poetic and introspective writing style, capturing the haunting and introspective nature of the stories. Infuse the story with themes of loss, the search for truth, and the intricacies of the human mind."
+            },
+            {
+                "name": "Elizabeth George",
+                "Description": "Unleash intricately plotted and character-driven crime novels that delve into the psychological depths of human behavior. Craft a narrative that combines complex investigations with nuanced explorations of personal relationships. Develop multidimensional characters who face personal and professional challenges while solving crimes. Employ a detailed and introspective writing style, capturing the emotional nuances and complexities of the characters. Infuse the story with themes of morality, personal transformation, and the interconnectedness of lives."
+            },
+            {
+                "name": "P.D. James",
+                "Description": "Transport readers to the world of British crime fiction, crafting atmospheric and meticulously plotted detective stories. Develop characters who navigate the intricacies of investigations while grappling with their own personal struggles. Employ a descriptive and immersive writing style, capturing the nuances of the English countryside and the complexities of human relationships. Infuse the story with themes of morality, justice, and the exploration of the darker side of human nature."
+            },
+            {
+                "name": "Henning Mankell",
+                "Description": "Engage readers with atmospheric and socially conscious crime novels set in the bleak landscapes of Sweden. Craft a narrative that combines gripping mysteries with insightful social commentary. Develop characters who confront societal injustices, personal demons, and complex investigations. Employ a contemplative and introspective writing style, reflecting the somber tone of the stories. Infuse the story with themes of social inequality, the human cost of crime, and the search for meaning in a troubled world."
+            },
+            {
+                "name": "Sue Grafton",
+                "Description": "Delve into the world of gritty and fast-paced crime novels featuring a resilient and resourceful female detective. Craft a narrative that combines clever mysteries with vivid characterizations. Develop a relatable and tenacious protagonist who navigates dangerous situations while unraveling complex cases. Employ a straightforward and engaging writing style that propels readers through the twists and turns of the story. Infuse the story with themes of resilience, justice, and the pursuit of truth."
+            },
+            {
+                "name": "James Patterson",
+                "Description": "Unleash fast-paced and suspenseful thrillers that keep readers on the edge of their seats. Craft a narrative that combines gripping action, intricate plots, and quick pacing. Develop memorable and dynamic characters who face high-stakes challenges while navigating intricate mysteries. Employ a concise and energetic writing style, propelling the story forward with short chapters and suspenseful cliffhangers. Infuse the story with themes of justice, redemption, and the triumph of good over evil."
+            },
+            {
+                "name": "Lee Child",
+                "Description": "Engage readers with thrilling and adrenaline-fueled crime novels featuring a rugged and enigmatic protagonist. Craft a narrative that combines fast-paced action, clever twists, and intricate plotting. Develop a stoic and resourceful protagonist who navigates dangerous situations while seeking justice. Employ a crisp and direct writing style that mirrors the character's no-nonsense approach. Infuse the story with themes of survival, loyalty, and the search for truth."
+            },
+            {
+                "name": "Harlan Coben",
+                "Description": "Transport readers to the world of gripping and twist-filled thrillers that explore the dark secrets lurking beneath the surface of seemingly ordinary lives. Craft a narrative that combines intricate mysteries with relatable characters and unexpected plot twists. Develop characters who confront personal demons, grapple with moral dilemmas, and navigate complex webs of deception. Employ a fast-paced and suspenseful writing style, keeping readers guessing until the final revelation. Infuse the story with themes of family, betrayal, and the lengths people will go to protect their secrets."
+            },
+{
+    "name": "Stieg Larsson",
+    "Description": "Delve into dark and intricately plotted crime novels that delve into social issues, political corruption, and the nature of justice. Craft a narrative that combines intense suspense with layered character development. Develop multidimensional characters who confront personal demons, expose societal injustices, and navigate treacherous landscapes. Employ a descriptive and atmospheric writing style, capturing the gritty realism and moral complexities of the stories. Infuse the story with themes of abuse of power, gender inequality, and the pursuit of truth."
+  },
+  {
+    "name": "Dennis Lehane",
+    "Description": "Unleash gritty and atmospheric crime novels set against the backdrop of morally complex and decaying urban landscapes. Craft a narrative that combines intricate mysteries with psychological depth. Develop flawed and multidimensional characters who confront their own demons while navigating treacherous investigations. Employ a vivid and evocative writing style, capturing the raw emotions and moral dilemmas faced by the characters. Infuse the story with themes of redemption, the impact of past traumas, and the search for truth."
+  },
+  {
+    "name": "Karin Slaughter",
+    "Description": "Engage readers with pulse-pounding and visceral crime thrillers that explore the darkest corners of human nature. Craft a narrative that combines gripping suspense, intricate plotting, and intense character relationships. Develop resilient and flawed characters who confront personal traumas while pursuing justice. Employ a gritty and visceral writing style, immersing readers in the visceral and often violent nature of the stories. Infuse the story with themes of resilience, the impact of violence, and the pursuit of truth."
+  },
+  {
+    "name": "Kathy Reichs",
+    "Description": "Delve into the world of forensic science and crime investigation, crafting gripping and scientifically accurate thrillers. Develop a relatable and determined forensic anthropologist protagonist who navigates complex investigations and confronts personal challenges. Employ a detailed and precise writing style, capturing the intricacies of forensic procedures and scientific analysis. Infuse the story with themes of justice, the power of scientific evidence, and the pursuit of truth."
+  },
+  {
+    "name": "Robert Galbraith (Pseudonym for J.K. Rowling)",
+    "Description": "Transport readers to the world of contemporary crime fiction, crafting atmospheric and character-driven mysteries. Develop complex and compelling characters who confront personal struggles and investigate puzzling cases. Employ a descriptive and immersive writing style, capturing the nuances of the setting and the intricacies of human relationships. Infuse the story with themes of identity, redemption, and the search for truth."
+  },
+  {
+    "name": "Tess Gerritsen",
+    "Description": "Engage readers with gripping and suspenseful crime novels that combine intricate mysteries with medical and scientific elements. Craft a narrative that explores the intersection of forensic science, medicine, and crime-solving. Develop resilient and intelligent characters who face personal and professional challenges while uncovering complex truths. Employ a meticulous and research-driven writing style, capturing the medical and scientific aspects of the story. Infuse the story with themes of survival, the consequences of human actions, and the pursuit of justice."
+  },
+  {
+    "name": "John Grisham",
+    "Description": "Unleash compelling and intricately plotted legal thrillers that delve into the intricacies of the legal system and the moral dilemmas faced by lawyers. Craft a narrative that combines courtroom drama with gripping suspense. Develop relatable and determined characters who navigate high-stakes legal battles while confronting personal and ethical challenges. Employ a clear and concise writing style, capturing the tension and complexity of legal proceedings. Infuse the story with themes of justice, corruption, and the human quest for truth."
+  },
+  {
+    "name": "David Baldacci",
+    "Description": "Engage readers with high-octane and fast-paced thrillers that combine intricate plotting, compelling characters, and government conspiracies. Craft a narrative that keeps readers on the edge of their seats, balancing action, suspense, and unexpected twists. Develop resilient and resourceful characters who uncover dark secrets and navigate dangerous situations. Employ a crisp and accessible writing style, propelling the story forward with breakneck speed. Infuse the story with themes of loyalty, betrayal, and the pursuit of truth."
+  },
+  {
+    "name": "Mary Higgins Clark",
+    "Description": "Unleash gripping and suspenseful mysteries that blend intricate puzzles with relatable characters. Craft a narrative that keeps readers guessing until the final reveal, combining suspense, drama, and emotional depth. Develop strong-willed and determined characters who uncover dark secrets and confront personal challenges. Employ a crisp and engaging writing style, capturing the emotional intensity and psychological depth of the stories. Infuse the story with themes of resilience, justice, and the power of determination."
+  },
+  {
+    "name": "Agatha Christie",
+    "Description": "Delve into the world of classic and intricately plotted mystery novels, crafting puzzles that challenge readers' deductive skills. Develop enigmatic and clever detectives who unravel mysteries through astute observations and meticulous reasoning. Employ a concise and precise writing style, capturing the essence of the Golden Age of detective fiction. Infuse the story with twists, red herrings, and unexpected revelations. Explore themes of deception, justice, and the complexities of human nature."
+  },
+  {
+    "name": "Raymond Chandler",
+    "Description": "Transport readers to the gritty and atmospheric world of hardboiled crime fiction, crafting narratives that blend tough-talking detectives, femme fatales, and intricate mysteries. Develop morally complex characters who navigate corrupt cities, uncovering deep-seated secrets along the way. Employ a poetic and vivid writing style, capturing the dark underbelly of society and the raw emotions of the characters. Infuse the story with themes of corruption, morality, and the search for truth."
+  }
+]
+},
+  {
+    "style": "Thriller",
+    "authors": [
+{
+    "name": "Dan Brown",
+    "Description": "Embark on a thrilling journey through a world of ancient enigmas and concealed wisdom. Follow a protagonist driven by unyielding curiosity and a quest for truth, accompanied by a companion whose strengths complement their own. The narrative weaves suspenseful action with introspective moments, intertwining thought-provoking dialogues and clever codes to add layers of intrigue. Unexpected twists and turns keep the medium-paced plot engaging, while vivid descriptions immerse readers in historical settings and artifacts. Maintain a clear and straightforward writing style, allowing room for readers' imaginations to flourish, as they unravel the secrets and discover hidden truths in this captivating adventure."
+  },
+  {
+    "name": "Tom Clancy",
+    "Description": "Embark on a thrilling journey of international espionage and military intrigue as you emulate the writing style of a renowned author. Craft a skilled and dedicated main character amidst a complex and politically charged world, filled with realistic military and intelligence details. Intersperse fast-paced action with strategic planning and tension-filled encounters, while maintaining authenticity and credibility through extensive research. Weave together intricate plotlines with unexpected twists and revelations, keeping readers engaged until the gripping conclusion. Utilize dialogue to reveal character motivations and relationships, while showing the emotional impact of high-stakes scenarios. Maintain a clear and straightforward writing style, creating a highly immersive and authentic narrative that captivates readers until the very end."
+  },
+  { "name": "Robert Ludlum" },
+  { "name": "Vince Flynn" },
+  { "name": "Brad Thor" },
+  { "name": "John le Carré" },
+  { "name": "Daniel Silva" },
+  { "name": "Ken Follett" },
+  { "name": "Frederick Forsyth" },
+  { "name": "James Rollins" },
+  { "name": "Clive Cussler" },
+  { "name": "Lee Child" },
+  { "name": "David Baldacci" },
+  { "name": "Michael Crichton" },
+  { "name": "John Grisham" },
+  { "name": "Stephen King" },
+  { "name": "Dean Koontz" },
+  { "name": "Patricia Highsmith" },
+  { "name": "Gillian Flynn" },
+  { "name": "Stieg Larsson" },
+  { "name": "Harlan Coben" },
+  { "name": "Jo Nesbø" },
+  { "name": "Ian Fleming" },
+  { "name": "Patricia Cornwell" },
+  { "name": "Kathy Reichs" }
+    ]
+  },
+  {
+"style": "Romance",
+    "authors": [
+  { "name": "Nora Roberts" },
+  { "name": "Danielle Steel" },
+  { "name": "Nicholas Sparks" },
+  { "name": "Julia Quinn" },
+  { "name": "Lisa Kleypas" },
+  { "name": "Eloisa James" },
+  { "name": "Sarah MacLean" },
+  { "name": "Tessa Dare" },
+  { "name": "Courtney Milan" },
+  { "name": "Beverly Jenkins" },
+  { "name": "Susan Elizabeth Phillips" },
+  { "name": "Jude Deveraux" },
+  { "name": "Johanna Lindsey" },
+  { "name": "Julie Garwood" },
+  { "name": "Linda Howard" },
+  { "name": "Sandra Brown" },
+  { "name": "Diana Gabaldon" },
+  { "name": "J.R. Ward" },
+  { "name": "Nalini Singh" },
+  { "name": "Christine Feehan" },
+  { "name": "Sherrilyn Kenyon" },
+  { "name": "Lora Leigh" },
+  { "name": "Sylvia Day" },
+  { "name": "E.L. James" },
+  { "name": "Colleen Hoover" }
+]
+},
+{
+"style": "Horror",
+    "authors": [
+  { "name": "Stephen King" },
+  { "name": "Dean Koontz" },
+  { "name": "Clive Barker" },
+  { "name": "Joe Hill" },
+  { "name": "Anne Rice" },
+  { "name": "Peter Straub" },
+  { "name": "Richard Matheson" },
+  { "name": "Robert R. McCammon" },
+  { "name": "Ramsey Campbell" },
+  { "name": "Thomas Ligotti" },
+  { "name": "John Saul" },
+  { "name": "Bentley Little" },
+  { "name": "Jack Ketchum" },
+  { "name": "Brian Keene" },
+  { "name": "Poppy Z. Brite" },
+  { "name": "Richard Laymon" },
+  { "name": "James Herbert" },
+  { "name": "Graham Masterton" },
+  { "name": "Paul Tremblay" },
+  { "name": "Sarah Pinborough" },
+  { "name": "Josh Malerman" },
+  { "name": "M.R. Carey" },
+  { "name": "Adam Nevill" },
+  { "name": "Nick Cutter" },
+  { "name": "Ania Ahlborn" }
+]
+  },
+  {
+    "style": "Young Adult",
+    "authors": [
+  { "name": "J.K. Rowling" },
+  { "name": "Suzanne Collins" },
+  { "name": "Veronica Roth" },
+  { "name": "John Green" },
+  { "name": "Cassandra Clare" },
+  { "name": "Rick Riordan" },
+  { "name": "Sarah J. Maas" },
+  { "name": "Rainbow Rowell" },
+  { "name": "Leigh Bardugo" },
+  { "name": "Marie Lu" },
+  { "name": "Stephanie Meyer" },
+  { "name": "Philip Pullman" },
+  { "name": "Lois Lowry" },
+  { "name": "Markus Zusak" },
+  { "name": "Ransom Riggs" },
+  { "name": "Holly Black" },
+  { "name": "Victoria Aveyard" },
+  { "name": "Angie Thomas" },
+  { "name": "Nicola Yoon" },
+  { "name": "Jenny Han" },
+  { "name": "Becky Albertalli" },
+  { "name": "Adam Silvera" },
+  { "name": "Sabaa Tahir" },
+  { "name": "Tahereh Mafi" },
+  { "name": "Marissa Meyer" }
+]
+},
+{
+    "style": "Historical Fiction",
+    "authors": [
+      { "name": "Ken Follett" },
+      { "name": "Philippa Gregory" },
+      { "name": "Bernard Cornwell" },
+      { "name": "Diana Gabaldon" },
+      { "name": "Hilary Mantel" },
+      { "name": "Kate Morton" },
+      { "name": "Sarah Waters" },
+      { "name": "Tracy Chevalier" },
+      { "name": "Sharon Kay Penman" },
+      { "name": "Isabel Allende" },
+      { "name": "Colleen McCullough" },
+      { "name": "Margaret George" },
+      { "name": "Geraldine Brooks" },
+      { "name": "Alison Weir" },
+      { "name": "Julia Quinn" },
+      { "name": "Lisa See" },
+      { "name": "Amy Tan" },
+      { "name": "Anthony Doerr" },
+      { "name": "Kristin Hannah" },
+      { "name": "Laura Hillenbrand" },
+      { "name": "Ian McEwan" },
+      { "name": "Markus Zusak" },
+      { "name": "Khaled Hosseini" },
+      { "name": "Jodi Picoult" },
+      { "name": "Chimamanda Ngozi Adichie" }
+    ]
+  },
+  {
+    "style": "Crime",
+    "authors": [
+      { "name": "James Patterson" },
+      { "name": "Michael Connelly" },
+      { "name": "John Grisham" },
+      { "name": "Lee Child" },
+      { "name": "Patricia Cornwell" },
+      { "name": "Ian Rankin" },
+      { "name": "Jo Nesbø" },
+      { "name": "Harlan Coben" },
+      { "name": "Stieg Larsson" },
+      { "name": "Dennis Lehane" },
+      { "name": "Karin Slaughter" },
+      { "name": "Kathy Reichs" },
+      { "name": "Robert Galbraith (Pseudonym for J.K. Rowling)" },
+      { "name": "Tess Gerritsen" },
+      { "name": "David Baldacci" },
+      { "name": "Mary Higgins Clark" },
+      { "name": "Agatha Christie" },
+      { "name": "Raymond Chandler" },
+      { "name": "Peter James" },
+      { "name": "Val McDermid" },
+      { "name": "Mark Billingham" },
+      { "name": "Peter Robinson" },
+      { "name": "Ann Cleeves" },
+      { "name": "Ruth Rendell" },
+      { "name": "P.D. James" }
+    ]
+  },
+  {
+    "style": "Adventure",
+    "authors": [
+      { "name": "Clive Cussler" },
+      { "name": "James Rollins" },
+      { "name": "Matthew Reilly" },
+      { "name": "Wilbur Smith" },
+      { "name": "Tom Clancy" },
+      { "name": "Dan Brown" },
+      { "name": "Robert Ludlum" },
+      { "name": "Ken Follett" },
+      { "name": "John Grisham" },
+      { "name": "Michael Crichton" },
+      { "name": "Lee Child" },
+      { "name": "David Baldacci" },
+      { "name": "Jack Higgins" },
+      { "name": "Bernard Cornwell" },
+      { "name": "Douglas Preston & Lincoln Child" },
+      { "name": "Andy McDermott" },
+      { "name": "Brad Thor" },
+      { "name": "Vince Flynn" },
+      { "name": "Steve Berry" },
+      { "name": "Daniel Silva" },
+      { "name": "Frederick Forsyth" },
+      { "name": "Nelson DeMille" },
+      { "name": "Alex Scarrow" },
+      { "name": "Anthony Horowitz" },
+      { "name": "Rick Riordan" }
+    ]
+  },
+  {
+    "style": "Literary Fiction",
+    "authors": [
+      { "name": "Haruki Murakami" },
+      { "name": "Margaret Atwood" },
+      { "name": "Kazuo Ishiguro" },
+      { "name": "Ian McEwan" },
+      { "name": "Zadie Smith" },
+      { "name": "Salman Rushdie" },
+      { "name": "Jonathan Franzen" },
+      { "name": "Donna Tartt" },
+      { "name": "Cormac McCarthy" },
+      { "name": "Jhumpa Lahiri" },
+      { "name": "Chimamanda Ngozi Adichie" },
+      { "name": "Michael Chabon" },
+      { "name": "Alice Munro" },
+      { "name": "Toni Morrison" },
+      { "name": "Philip Roth" },
+      { "name": "Julian Barnes" },
+      { "name": "Colm Tóibín" },
+      { "name": "Marilynne Robinson" },
+      { "name": "David Mitchell" },
+      { "name": "Arundhati Roy" },
+      { "name": "Hilary Mantel" },
+      { "name": "Elena Ferrante" },
+      { "name": "Ali Smith" },
+      { "name": "Yann Martel" },
+      { "name": "Khaled Hosseini" }
+    ]
+  },
+  {
+    "style": "Dystopian",
+    "authors": [
+      { "name": "Suzanne Collins" },
+      { "name": "Veronica Roth" },
+      { "name": "George Orwell" },
+      { "name": "Aldous Huxley" },
+      { "name": "Margaret Atwood" },
+      { "name": "Ray Bradbury" },
+      { "name": "Anthony Burgess" },
+      { "name": "Cormac McCarthy" },
+      { "name": "Lois Lowry" },
+      { "name": "Kazuo Ishiguro" },
+      { "name": "Philip K. Dick" },
+      { "name": "Octavia Butler" },
+      { "name": "Neal Shusterman" },
+      { "name": "Pierce Brown" },
+      { "name": "Marie Lu" },
+      { "name": "James Dashner" },
+      { "name": "Paolo Bacigalupi" },
+      { "name": "Patrick Ness" },
+      { "name": "Ally Condie" },
+      { "name": "Scott Westerfeld" },
+      { "name": "Lauren Oliver" },
+      { "name": "M.T. Anderson" },
+      { "name": "Jeanne DuPrau" },
+      { "name": "Kiera Cass" },
+      { "name": "Tahereh Mafi" }
+    ]
+  },
+  {
+    "style": "Paranormal",
+    "authors": [
+      { "name": "Stephen King" },
+      { "name": "Anne Rice" },
+      { "name": "Charlaine Harris" },
+      { "name": "Patricia Briggs" },
+      { "name": "Jim Butcher" },
+      { "name": "Kim Harrison" },
+      { "name": "Laurell K. Hamilton" },
+      { "name": "J.R. Ward" },
+      { "name": "Sherrilyn Kenyon" },
+      { "name": "Cassandra Clare" },
+      { "name": "Nalini Singh" },
+      { "name": "Gena Showalter" },
+      { "name": "Christine Feehan" },
+      { "name": "Kelley Armstrong" },
+      { "name": "Richelle Mead" },
+      { "name": "L.J. Smith" },
+      { "name": "Jeaniene Frost" },
+      { "name": "Karen Marie Moning" },
+      { "name": "Kresley Cole" },
+      { "name": "J.R. Rain" },
+      { "name": "Deborah Harkness" },
+      { "name": "Charlaine Harris" },
+      { "name": "Patricia Briggs" },
+      { "name": "Kim Harrison" }
+    ]
+  },
+  {
+    "style": "Graphic Novel",
+    "authors": [
+      { "name": "Alan Moore" },
+      { "name": "Neil Gaiman" },
+      { "name": "Frank Miller" },
+      { "name": "Art Spiegelman" },
+      { "name": "Marjane Satrapi" },
+      { "name": "Brian K. Vaughan" },
+      { "name": "Bill Willingham" },
+      { "name": "Robert Kirkman" },
+      { "name": "Grant Morrison" },
+      { "name": "Mike Mignola" },
+      { "name": "Warren Ellis" },
+      { "name": "Garth Ennis" },
+      { "name": "Mark Millar" },
+      { "name": "Scott McCloud" },
+      { "name": "Stan Lee" },
+      { "name": "Jack Kirby" },
+      { "name": "Chris Claremont" },
+      { "name": "Gail Simone" },
+      { "name": "Jeff Smith" },
+      { "name": "Charles Burns" },
+      { "name": "Daniel Clowes" },
+      { "name": "Alison Bechdel" },
+      { "name": "Joe Sacco" },
+      { "name": "Craig Thompson" },
+      { "name": "Harvey Pekar" }
+    ]
+  },
+  {
+    "style": "Magic Realism",
+    "authors": [
+      { "name": "Gabriel García Márquez" },
+      { "name": "Haruki Murakami" },
+      { "name": "Salman Rushdie" },
+      { "name": "Isabel Allende" },
+      { "name": "Toni Morrison" },
+      { "name": "Jorge Luis Borges" },
+      { "name": "Laura Esquivel" },
+      { "name": "Alice Hoffman" },
+      { "name": "Yann Martel" },
+      { "name": "Angela Carter" },
+      { "name": "Mikhail Bulgakov" },
+      { "name": "José Saramago" },
+      { "name": "Italo Calvino" },
+      { "name": "Gunter Grass" },
+      { "name": "Ben Okri" },
+      { "name": "Jeanette Winterson" },
+      { "name": "Peter S. Beagle" },
+      { "name": "Mark Helprin" },
+      { "name": "Joanne Harris" },
+      { "name": "Helen Oyeyemi" },
+      { "name": "Kelly Link" },
+      { "name": "Aimee Bender" },
+      { "name": "Karen Russell" },
+      { "name": "Erin Morgenstern" },
+      { "name": "Sarah Addison Allen" }
+    ]
+  },
+  {
+    "style": "Action",
+    "authors": [
+      { "name": "Tom Clancy" },
+      { "name": "Lee Child" },
+      { "name": "Robert Ludlum" },
+      { "name": "Clive Cussler" },
+      { "name": "Vince Flynn" },
+      { "name": "Brad Thor" },
+      { "name": "James Rollins" },
+      { "name": "Daniel Silva" },
+      { "name": "Matthew Reilly" },
+      { "name": "Wilbur Smith" },
+      { "name": "David Baldacci" },
+      { "name": "Frederick Forsyth" },
+      { "name": "John Grisham" },
+      { "name": "Michael Crichton" },
+      { "name": "Ken Follett" },
+      { "name": "Ian Fleming" },
+      { "name": "Jack Higgins" },
+      { "name": "Bernard Cornwell" },
+      { "name": "Douglas Preston & Lincoln Child" },
+      { "name": "Andy McDermott" },
+      { "name": "Steve Berry" },
+      { "name": "Nelson DeMille" },
+      { "name": "Alex Scarrow" },
+      { "name": "Anthony Horowitz" },
+      { "name": "Rick Riordan" }
+    ]
+  },
+  {
+    "style": "Western",
+    "authors": [
+      { "name": "Louis L'Amour" },
+      { "name": "Zane Grey" },
+      { "name": "Larry McMurtry" },
+      { "name": "Elmore Leonard" },
+      { "name": "Cormac McCarthy" },
+      { "name": "William W. Johnstone" },
+      { "name": "Charles Portis" },
+      { "name": "Craig Johnson" },
+      { "name": "Tony Hillerman" },
+      { "name": "Ralph Compton" },
+      { "name": "J.A. Johnstone" },
+      { "name": "Loren D. Estleman" },
+      { "name": "Terry C. Johnston" },
+      { "name": "Matt Braun" },
+      { "name": "Luke Short" },
+      { "name": "Max Brand" },
+      { "name": "James Carlos Blake" },
+      { "name": "Elmer Kelton" },
+      { "name": "J.T. Edson" },
+      { "name": "William MacLeod Raine" },
+      { "name": "Owen Wister" },
+      { "name": "Ernest Haycox" },
+      { "name": "Dorothy M. Johnson" },
+      { "name": "Thomas Eidson" },
+      { "name": "Richard S. Wheeler" }
+    ]
+  },
+  {
+    "style": "Gothic",
+    "authors": [
+      { "name": "Anne Rice" },
+      { "name": "Stephen King" },
+      { "name": "Neil Gaiman" },
+      { "name": "Edgar Allan Poe" },
+      { "name": "Mary Shelley" },
+      { "name": "Bram Stoker" },
+      { "name": "Daphne du Maurier" },
+      { "name": "Carlos Ruiz Zafón" },
+      { "name": "Patrick Süskind" },
+      { "name": "Oscar Wilde" },
+      { "name": "H.P. Lovecraft" },
+      { "name": "Shirley Jackson" },
+      { "name": "Susan Hill" },
+      { "name": "Sarah Waters" },
+      { "name": "Diane Setterfield" },
+      { "name": "John Harwood" },
+      { "name": "Elizabeth Kostova" },
+      { "name": "Laura Purcell" },
+      { "name": "Carlos Ruiz Zafón" },
+      { "name": "Kate Morton" },
+      { "name": "V.C. Andrews" },
+      { "name": "Stacey Halls" },
+      { "name": "Laura Purcell" },
+      { "name": "Silvia Moreno-Garcia" },
+      { "name": "Sarah Perry" }
+    ]
+  },
+  {
+    "style": "Satire",
+    "authors": [
+      { "name": "Terry Pratchett" },
+      { "name": "Douglas Adams" },
+      { "name": "Kurt Vonnegut" },
+      { "name": "George Orwell" },
+      { "name": "Jonathan Swift" },
+      { "name": "Mark Twain" },
+      { "name": "Joseph Heller" },
+      { "name": "Oscar Wilde" },
+      { "name": "Evelyn Waugh" },
+      { "name": "Aldous Huxley" },
+      { "name": "Tom Wolfe" },
+      { "name": "David Sedaris" },
+      { "name": "Christopher Moore" },
+      { "name": "P.G. Wodehouse" },
+      { "name": "Carl Hiaasen" },
+      { "name": "Chuck Palahniuk" },
+      { "name": "Bret Easton Ellis" },
+      { "name": "Gary Shteyngart" },
+      { "name": "Salman Rushdie" },
+      { "name": "Martin Amis" },
+      { "name": "Ian McEwan" },
+      { "name": "John Kennedy Toole" },
+      { "name": "Mikhail Bulgakov" },
+      { "name": "Saki (H.H. Munro)" },
+      { "name": "Jerome K. Jerome" }
+    ]
+  }
+]
+
+
+
+
+
+
+
+
+
+

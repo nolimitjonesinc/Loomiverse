@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22757" systemVersion="23E224" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Analytics" representedClassName="Analytics" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="eventType" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="analytics" inverseEntity="Users"/>
+    </entity>
+    <entity name="Audiobooks" representedClassName="Audiobooks" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String"/>
+        <relationship name="story" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Story" inverseName="audiobooks" inverseEntity="Story"/>
+    </entity>
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="characters" optional="YES" attributeType="String"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="genre" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="publishdate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="summary" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="storychapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StoryChapters" inverseName="book" inverseEntity="StoryChapters"/>
+    </entity>
+    <entity name="Characters" representedClassName="Characters" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="2" usesScalarValueType="YES"/>
+        <attribute name="ancestry" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+        <attribute name="backstory" optional="YES" attributeType="String"/>
+        <attribute name="careerSkills" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+        <attribute name="emotionalMaturity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="interests" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+        <attribute name="lifeExperiences" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+        <attribute name="moralAlignment" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="personalityTraits" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+        <attribute name="physicality" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+        <attribute name="psychologicalComplexities" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+        <attribute name="socialRelationships" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+        <relationship name="relationships" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Relationships" inverseName="characterrelationship" inverseEntity="Relationships"/>
+        <relationship name="story" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Story" inverseName="characters" inverseEntity="Story"/>
+        <relationship name="storychapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StoryChapters" inverseName="characters" inverseEntity="StoryChapters"/>
+    </entity>
+    <entity name="Ownership" representedClassName="Ownership" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="royalties" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sales" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="transactions" optional="YES" attributeType="String"/>
+        <relationship name="story" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Story" inverseName="ownership" inverseEntity="Story"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="ownership" inverseEntity="Users"/>
+    </entity>
+    <entity name="Ratings" representedClassName="Ratings" syncable="YES" codeGenerationType="class">
+        <attribute name="rating" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="story" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Story" inverseName="ratings" inverseEntity="Story"/>
+    </entity>
+    <entity name="Relationships" representedClassName="Relationships" syncable="YES" codeGenerationType="class">
+        <relationship name="characterrelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Characters" inverseName="relationships" inverseEntity="Characters"/>
+    </entity>
+    <entity name="Story" representedClassName="Story" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="chapterNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="character" optional="YES" attributeType="String"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isAudioAvailable" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="recordName" attributeType="String" defaultValueString="UUID"/>
+        <attribute name="storyChapters" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String" defaultValueString="'''"/>
+        <relationship name="audiobooks" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Audiobooks" inverseName="story" inverseEntity="Audiobooks"/>
+        <relationship name="characters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Characters" inverseName="story" inverseEntity="Characters"/>
+        <relationship name="ownership" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ownership" inverseName="story" inverseEntity="Ownership"/>
+        <relationship name="ratings" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ratings" inverseName="story" inverseEntity="Ratings"/>
+        <relationship name="storychapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StoryChapters" inverseName="story" inverseEntity="StoryChapters"/>
+    </entity>
+    <entity name="StoryChapters" representedClassName="StoryChapters" syncable="YES">
+        <attribute name="chapterNumber" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="orderIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="recordName" attributeType="String" defaultValueString="UUID"/>
+        <attribute name="title" attributeType="String" minValueString="0" defaultValueString="&quot;&quot;"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="storychapters" inverseEntity="Book"/>
+        <relationship name="characters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Characters" inverseName="storychapters" inverseEntity="Characters"/>
+        <relationship name="story" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Story" inverseName="storychapters" inverseEntity="Story"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="preferences" optional="YES" attributeType="String"/>
+        <attribute name="profile" optional="YES" attributeType="String"/>
+        <attribute name="profileImage" optional="YES" attributeType="Binary"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="settings" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="analytics" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Analytics" inverseName="user" inverseEntity="Analytics"/>
+        <relationship name="ownership" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ownership" inverseName="user" inverseEntity="Ownership"/>
+    </entity>
+</model>
