@@ -17,7 +17,7 @@ struct TitleAndLoglineView: View {
                 isPresentingStoryView = true
             }
             .sheet(isPresented: $isPresentingStoryView) {
-                StoryView(storyGenerator: storyGenerator, titleAndLogline: titleAndLogline, chapterNumber: 1)
+                StoryView(storyGenerator: storyGenerator, titleAndLogline: titleAndLogline, genre: genre, chapterNumber: 1)
             }
         }
         .onAppear {

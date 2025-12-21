@@ -46,10 +46,10 @@ extension Story {
 extension Story {
 
     @objc(addStorychaptersObject:)
-    @NSManaged public func addToStorychapters(_ value: StoryChapters)
+    @NSManaged public func addToStorychapters(_ value: NSManagedObject)
 
     @objc(removeStorychaptersObject:)
-    @NSManaged public func removeFromStorychapters(_ value: StoryChapters)
+    @NSManaged public func removeFromStorychapters(_ value: NSManagedObject)
 
     @objc(addStorychapters:)
     @NSManaged public func addToStorychapters(_ values: NSSet)

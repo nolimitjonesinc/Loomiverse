@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(git clone:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Loomiverse Online v1.0 baseline\n\nFeatures included:\n- Emergent Character System \\(8 psychological layers\\)\n- Event Simulation Engine \\(140+ life events birth to age 18\\)\n- Story Bible with continuity injection\n- Choose Your Own Adventure branching\n- Dual AI provider support \\(OpenAI + Anthropic\\)\n- 25+ Author Styles from iOS app\n\nProject structure:\n- Vite + React 18 + Tailwind CSS\n- src/App.jsx - Main application\n- src/data/AuthorStyles.json - Writing styles\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nFeature: Port iOS app enhancements to web app\n\nMajor improvements ported from iOS Loomiverse app:\n\n1. Author Styles Integration \\(25+ styles\\)\n   - Added src/data/authorStyles.js module\n   - Imports AuthorStyles.json from iOS app\n   - Random author selection per genre\n   - Author style injected into chapter generation prompts\n\n2. Expanded Genre System \\(6 → 26 genres\\)\n   - Fantasy variants: Epic Fantasy, Dark Fantasy\n   - Sci-Fi variants: Classic, Cyberpunk, 70s Sci-Fi\n   - Mystery/Thriller: Mystery, Thriller, Noir, Crime\n   - Romance: Classic, Romantic Comedy\n   - Horror: Classic, Gothic\n   - Plus: Young Adult, Historical, Dystopian, Paranormal,\n     Adventure, Action, Western, Satire, Magic Realism,\n     Biography, Comedy, Graphic Novel\n   - Each genre has specific story formula and era settings\n\n3. Story Outline Generation \\(NEW\\)\n   - Generates 10-point story outline before Chapter 1\n   - Uses genre formula as structural guide\n   - Outline tracked in StoryBible and injected into prompts\n   - Better narrative structure and chapter continuity\n\n4. Enhanced StoryBible\n   - Added authorStyle, storyOutline, genreFormula fields\n   - formatOutlineContext\\(\\) shows current position\n   - formatAuthorStyleContext\\(\\) for AI guidance\n   - getCurrentPlotPoint\\(\\) for chapter-specific guidance\n\n5. Improved Genre Selection UI\n   - Organized into 5 categories\n   - Scrollable layout for 26 genres\n   - Responsive grid \\(2-4 columns\\)\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(open http://localhost:5174/)",
+      "Bash(dig:*)",
+      "Bash(find:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(cat:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

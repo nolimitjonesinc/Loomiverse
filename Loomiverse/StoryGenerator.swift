@@ -60,6 +60,11 @@ class StoryGenerator: ObservableObject {
     // Never hardcode API keys in production apps. Use environment variables or secure methods.
     private let apiKey = "YOUR_OPENAI_API_KEY_HERE"
     private let apiUrl = "https://api.openai.com/v1/chat/completions"
+    
+    // Rate limiting
+    private var lastRequestTime: Date = Date.distantPast
+    private let minimumRequestInterval: TimeInterval = 1.0 // 1 second between requests
+    
     var protagonistName: String = ""
     var currentAllies: [String] = []
     var currentLocation: String = ""
@@ -178,6 +183,23 @@ class StoryGenerator: ObservableObject {
     // Removed duplicate function
     
     private func generateChapterContent(prompt: String, completion: @escaping (String?, Error?) -> Void) {
+        // Rate limiting - ensure minimum time between requests
+        let now = Date()
+        let timeSinceLastRequest = now.timeIntervalSince(lastRequestTime)
+        
+        if timeSinceLastRequest < minimumRequestInterval {
+            let delay = minimumRequestInterval - timeSinceLastRequest
+            DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
+                self.performChapterRequest(prompt: prompt, completion: completion)
+            }
+        } else {
+            performChapterRequest(prompt: prompt, completion: completion)
+        }
+    }
+    
+    private func performChapterRequest(prompt: String, completion: @escaping (String?, Error?) -> Void) {
+        lastRequestTime = Date()
+        
         guard let url = URL(string: apiUrl) else {
             completion(nil, NSError(domain: "Loomiverse", code: 1001, userInfo: [NSLocalizedDescriptionKey: "Invalid API URL"]))
             return
@@ -188,7 +210,7 @@ class StoryGenerator: ObservableObject {
         let enhancedPrompt = selectedStyle.isEmpty ? prompt : "\(prompt)\n\nWriting Style: \(selectedStyle)"
         
         let parameters: [String: Any] = [
-            "model": "gpt-3.5-turbo",
+            "model": "gpt-4o-mini",
             "messages": [["role": "user", "content": enhancedPrompt]],
             "max_tokens": 3000,  // Increased for longer chapters
             "temperature": 0.7
@@ -201,27 +223,52 @@ class StoryGenerator: ObservableObject {
             request.httpBody = jsonData
             request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.timeoutInterval = 30.0 // 30 second timeout
             
-            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            let session = URLSession.shared
+            let task = session.dataTask(with: request) { data, response, error in
                 if let error = error {
+                    print("Network error: \(error.localizedDescription)")
                     completion(nil, error)
                     return
                 }
                 
+                if let httpResponse = response as? HTTPURLResponse {
+                    print("HTTP Status Code: \(httpResponse.statusCode)")
+                    if httpResponse.statusCode != 200 {
+                        if let data = data, let errorString = String(data: data, encoding: .utf8) {
+                            print("API Error Response: \(errorString)")
+                        }
+                        completion(nil, NSError(domain: "Loomiverse", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "API request failed with status \(httpResponse.statusCode)"]))
+                        return
+                    }
+                }
+                
                 guard let data = data else {
-                    completion(nil, NSError(domain: "Loomiverse", code: 1002, userInfo: [NSLocalizedDescriptionKey: "No data received"]))
+                    print("No data received from API")
+                    completion(nil, NSError(domain: "Loomiverse", code: 1006, userInfo: [NSLocalizedDescriptionKey: "No data received from API"]))
                     return
                 }
                 
+                // Debug: Print raw response
+                if let rawResponse = String(data: data, encoding: .utf8) {
+                    print("Raw API Response: \(rawResponse)")
+                }
+                
                 do {
-                    let result = try JSONDecoder().decode(OpenAIResult.self, from: data)
+                    let decoder = JSONDecoder()
+                    let result = try decoder.decode(OpenAIResult.self, from: data)
                     if let content = result.choices.first?.message.content {
                         completion(content, nil)
                     } else {
                         completion(nil, NSError(domain: "Loomiverse", code: 1003, userInfo: [NSLocalizedDescriptionKey: "No content in response"]))
                     }
                 } catch {
-                    completion(nil, error)
+                    print("JSON parsing error: \(error)")
+                    if let rawResponse = String(data: data, encoding: .utf8) {
+                        print("Failed to parse response: \(rawResponse)")
+                    }
+                    completion(nil, NSError(domain: "Loomiverse", code: 1007, userInfo: [NSLocalizedDescriptionKey: "Failed to parse API response: \(error.localizedDescription)"]))
                 }
             }
             task.resume()
@@ -492,14 +539,26 @@ class StoryGenerator: ObservableObject {
                     print("No TITLE: line found in response")  // Debug log
                 }
                 
-                // Create a Core Data StoryChapters entity
-                let chapter = NSEntityDescription.insertNewObject(forEntityName: "StoryChapters", into: self.context) as! NSManagedObject
-                
-                // Set values using key-value coding
-                chapter.setValue(chapterContent, forKey: "content")
-                chapter.setValue(Int32(chapterNumber), forKey: "chapterNumber")
-                chapter.setValue(chapterTitle, forKey: "title")
-                chapter.setValue(UUID(), forKey: "id")
+                // Create a Core Data StoryChapters entity on background context
+                let backgroundContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+                backgroundContext.persistentStoreCoordinator = self.context.persistentStoreCoordinator
+                backgroundContext.perform {
+                    let chapter = NSEntityDescription.insertNewObject(forEntityName: "StoryChapters", into: backgroundContext) as! NSManagedObject
+                    
+                    // Set values using key-value coding
+                    chapter.setValue(chapterContent, forKey: "content")
+                    chapter.setValue(Int32(chapterNumber), forKey: "chapterNumber")
+                    chapter.setValue(chapterTitle, forKey: "title")
+                    chapter.setValue(UUID(), forKey: "id")
+                    
+                    // Save background context
+                    do {
+                        try backgroundContext.save()
+                        print("Chapter saved to Core Data successfully")
+                    } catch {
+                        print("Error saving chapter to Core Data: \(error)")
+                    }
+                }
                 
                 // Store the generated chapter content for future chapters to reference
                 self.generatedChapters.append(chapterContent)
@@ -515,13 +574,30 @@ class StoryGenerator: ObservableObject {
     
     // Helper function for API requests
     private func completeRequest(prompt: String, maxTokens: Int, completion: @escaping (Result<OpenAIResult, Error>) -> Void) {
+        // Rate limiting - ensure minimum time between requests
+        let now = Date()
+        let timeSinceLastRequest = now.timeIntervalSince(lastRequestTime)
+        
+        if timeSinceLastRequest < minimumRequestInterval {
+            let delay = minimumRequestInterval - timeSinceLastRequest
+            DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
+                self.performRequest(prompt: prompt, maxTokens: maxTokens, completion: completion)
+            }
+        } else {
+            performRequest(prompt: prompt, maxTokens: maxTokens, completion: completion)
+        }
+    }
+    
+    private func performRequest(prompt: String, maxTokens: Int, completion: @escaping (Result<OpenAIResult, Error>) -> Void) {
+        lastRequestTime = Date()
+        
         guard let url = URL(string: apiUrl) else {
             completion(.failure(NSError(domain: "Loomiverse", code: 1001, userInfo: [NSLocalizedDescriptionKey: "Invalid API URL"])))
             return
         }
         
         let requestBody: [String: Any] = [
-            "model": "gpt-4",
+            "model": "gpt-4o-mini",
             "messages": [["role": "user", "content": prompt]],
             "max_tokens": maxTokens,
             "temperature": 0.7
@@ -537,17 +613,36 @@ class StoryGenerator: ObservableObject {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
         request.httpBody = jsonData
+        request.timeoutInterval = 30.0 // 30 second timeout
         
         let session = URLSession.shared
         let task = session.dataTask(with: request) { data, response, error in
             if let error = error {
+                print("Network error: \(error.localizedDescription)")
                 completion(.failure(error))
                 return
             }
             
+            if let httpResponse = response as? HTTPURLResponse {
+                print("HTTP Status Code: \(httpResponse.statusCode)")
+                if httpResponse.statusCode != 200 {
+                    if let data = data, let errorString = String(data: data, encoding: .utf8) {
+                        print("API Error Response: \(errorString)")
+                    }
+                    completion(.failure(NSError(domain: "Loomiverse", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "API request failed with status \(httpResponse.statusCode)"])))
+                    return
+                }
+            }
+            
             guard let data = data else {
+                print("No data received from API")
                 completion(.failure(NSError(domain: "Loomiverse", code: 1006, userInfo: [NSLocalizedDescriptionKey: "No data received from API"])))
                 return
+            }
+            
+            // Debug: Print raw response
+            if let rawResponse = String(data: data, encoding: .utf8) {
+                print("Raw API Response: \(rawResponse)")
             }
             
             do {
@@ -555,7 +650,11 @@ class StoryGenerator: ObservableObject {
                 let result = try decoder.decode(OpenAIResult.self, from: data)
                 completion(.success(result))
             } catch {
-                completion(.failure(NSError(domain: "Loomiverse", code: 1007, userInfo: [NSLocalizedDescriptionKey: "Failed to parse API response"])))
+                print("JSON parsing error: \(error)")
+                if let rawResponse = String(data: data, encoding: .utf8) {
+                    print("Failed to parse response: \(rawResponse)")
+                }
+                completion(.failure(NSError(domain: "Loomiverse", code: 1007, userInfo: [NSLocalizedDescriptionKey: "Failed to parse API response: \(error.localizedDescription)"])))
             }
         }
         task.resume()

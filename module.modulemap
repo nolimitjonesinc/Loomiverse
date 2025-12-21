@@ -1,0 +1,4 @@
+module Loomiverse {
+    header "Loomiverse.h"
+    export *
+}

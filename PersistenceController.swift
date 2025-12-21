@@ -11,16 +11,29 @@ struct PersistenceController {
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
+        
+        // Configure CloudKit options to reduce sync issues
+        if let description = container.persistentStoreDescriptions.first {
+            description.shouldMigrateStoreAutomatically = true
+            description.shouldInferMappingModelAutomatically = true
+            
+            // CloudKit configuration
+            description.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
+            description.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
+            
+            // Performance optimizations
+            description.setOption("WAL" as NSString, forKey: NSSQLitePragmasOption)
+        }
+        
         container.loadPersistentStores { _, error in
             if let error = error {
                 print("Unresolved error \(error), \(error.localizedDescription)")
             }
         }
-
-        if let description = container.persistentStoreDescriptions.first {
-            description.shouldMigrateStoreAutomatically = true
-            description.shouldInferMappingModelAutomatically = true
-        }
+        
+        // Configure view context for better performance
+        container.viewContext.automaticallyMergesChangesFromParent = true
+        container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
     }
 
     var viewContext: NSManagedObjectContext {

@@ -44,7 +44,7 @@ struct StoryDetailsView: View {
                     }
                     .disabled(titleAndLogline == nil)
                     .sheet(isPresented: $isPresentingStoryView) {
-                        StoryView(storyGenerator: storyGenerator, titleAndLogline: titleAndLogline, chapterNumber: 1)
+                        StoryView(storyGenerator: storyGenerator, titleAndLogline: titleAndLogline, genre: genre, chapterNumber: 1)
                     }
                     .foregroundColor(.white)
                     .padding()

@@ -1,6 +1,8 @@
 import Foundation
 import CoreData
 
+// Import the Core Data module for StoryChapters entity
+
 extension Characters {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Characters> {
@@ -49,10 +51,20 @@ extension Characters {
 extension Characters {
 
     @objc(addStorychaptersObject:)
-    @NSManaged public func addToStorychapters(_ value: StoryChapters)
+    @NSManaged public func addToStorychapters(_ value: NSManagedObject)
+    
+    // Helper method to add a typed StoryChapters entity
+    func addChapter(_ chapter: NSManagedObject) {
+        addToStorychapters(chapter)
+    }
 
     @objc(removeStorychaptersObject:)
-    @NSManaged public func removeFromStorychapters(_ value: StoryChapters)
+    @NSManaged public func removeFromStorychapters(_ value: NSManagedObject)
+    
+    // Helper method to remove a typed StoryChapters entity
+    func removeChapter(_ chapter: NSManagedObject) {
+        removeFromStorychapters(chapter)
+    }
 
     @objc(addStorychapters:)
     @NSManaged public func addToStorychapters(_ values: NSSet)
